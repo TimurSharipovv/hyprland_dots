@@ -1,0 +1,76 @@
+/*Colors pallete*/
+@define-color bg #2E3440;
+@define-color bg-alt #3B4252;
+@define-color text #D8DEE9;
+@define-color accent #808080;
+@define-color alert #C5727A;
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 12px;
+    font-weight: 900;
+    min-height: 0;
+
+}
+
+window#waybar {
+    background: rgba(0,0,0,0);
+}
+
+#window {
+    color: @text;
+    margin: 6px 6px 6px 6px;
+    padding: 2px 8px;
+}
+
+#workspaces, #window, #clock, #pulseaudio, #network, #battery, #tray, #custom-swaync, #language, #custom-powermenu {
+    background-color: @bg;
+    color: @text;
+    border-radius: 5px 5px 10px 10px;
+    padding: 2px 8px;
+    margin: 6px 6px 6px 0px;
+}
+
+/* Стилизация воркспейсов */
+#workspaces  {
+    margin: 4px 0px 4px 4px;
+    padding: 2px;
+    border-radius: 6px 6px 12px 12px
+}
+
+#workspaces button {
+    padding: 0px 4px;
+    margin: 3px 2px;
+    background: @accent;
+    color: @text;
+    transition: all 0.25s ease-out;
+    border-radius: 4px 4px 7px 7px;
+}
+
+#workspaces button:hover {
+    background: @accent;
+    min-width: 48px;
+}
+
+#workspaces button.active {
+    background: @accent;
+    min-width: 72px;
+}
+
+/* Акценты на модулях при критических состояниях */
+#battery {
+    padding-left: 7px;
+    padding-right: 12px;
+}
+
+#custom-powermenu {
+    padding-left: 7px;
+    padding-right: 10px;
+}
+/* Кнопка SwayNC */
+#custom-swaync {
+    padding-left: 7px;
+    padding-right: 9px;
+}

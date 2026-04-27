@@ -1,0 +1,186 @@
+@define-color cc-bg rgba(46, 46, 46, 0.7);
+@define-color noti-border-color rgba(255, 255, 255, 0.15);
+@define-color noti-bg rgba(37, 41, 51, 0.8);
+@define-color noti-bg-opaque rgba(37, 41, 51, 0.9);
+@define-color noti-bg-darker rgb(38, 38, 38);
+@define-color noti-bg-hover rgb(47, 51, 61);
+@define-color noti-bg-hover-opaque rgb(56, 56, 56);
+@define-color noti-bg-focus rgba(68, 68, 68, 0.6);
+@define-color noti-close-bg rgba(255, 255, 255, 0.1);
+@define-color noti-close-bg-hover rgba(255, 255, 255, 0.15);
+@define-color text-color rgb(255, 255, 255);
+@define-color text-color-disabled rgb(150, 150, 150);
+@define-color bg-selected rgb(64, 80, 122);
+@define-color mpris-album-art-overlay rgba(0, 0, 0, 0.55);
+@define-color mpris-button-hover rgba(0, 0, 0, 0.50);
+
+/* Base styles */
+.notification-row {
+  outline: none;
+}
+
+.notification-row:focus, 
+.notification-row:hover {
+  background: @noti-bg-focus;
+}
+
+/* Notification elements */
+.notification-background {
+  padding: 6px 12px;
+}
+
+.close-button {
+  background: @noti-close-bg;
+  color: @text-color;
+  padding: 0;
+  border-radius: 100%;
+  margin: 5px 5px 0 0;
+  min-width: 24px;
+  min-height: 24px;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.close-button:hover {
+  background: @noti-close-bg-hover;
+  transition: background 0.15s ease-in-out;
+}
+
+.notification {
+  border-radius: 12px;
+  border: none;
+  transition: background 0.15s ease-in-out;
+  background: @noti-bg;
+}
+
+.notification-action, 
+.notification-default-action {
+  margin: 0;
+  background: transparent;
+  border: none;
+  color: @text-color;
+  transition: background 0.15s ease-in-out;
+  box-shadow: none;
+}
+
+.notification-action:hover, 
+.notification-default-action:hover {
+  background: @noti-bg-hover;
+}
+
+.notification-default-action {
+  border-radius: 12px;
+}
+
+.notification-default-action:not(:only-child) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.notification-content {
+  background: transparent;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+/* Text elements */
+.summary {
+  font-size: 16px;
+  font-weight: bold;
+  color: @text-color;
+  padding: 5px 5px 0 5px;
+}
+
+.time {
+  font-size: 16px;
+  font-weight: bold;
+  color: @text-color;
+  margin-right: 30px;
+}
+
+.body {
+  font-size: 15px;
+  color: @text-color;
+  padding: 0 5px 5px 5px;
+}
+
+/* Control center */
+.control-center {
+  background: @noti-bg-opaque;
+  margin: 12px;
+  color: @text-color;
+  border-radius: 12px;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.control-center-list .notification {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 
+              0 1px 3px 1px rgba(0, 0, 0, 0.1), 
+              0 2px 6px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Widgets */
+.widget-title,
+.widget-dnd,
+.widget-label,
+.widget-inhibitors {
+  margin: 8px;
+  color: @text-color;
+}
+
+.widget-title {
+  font-size: 1.5rem;
+}
+
+.widget-dnd {
+  font-size: 1.1rem;
+}
+
+.widget-label label {
+  font-size: 1.1rem;
+}
+
+.widget-inhibitors {
+  font-size: 1.5rem;
+}
+
+/* Common widget buttons */
+button {
+  color: @text-color;
+  background: @noti-bg;
+  border: 1px solid @noti-border-color;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+button:hover {
+  background: @noti-bg-hover;
+}
+
+/* Special widgets */
+.widget-mpris-player {
+  padding: 16px;
+  margin: 16px 20px;
+  background-color: @mpris-album-art-overlay;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+.widget-buttons-grid,
+.widget-volume,
+.widget-backlight {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 12px;
+  background-color: @noti-bg;
+}
+
+/* Utility classes */
+.blank-window,
+.floating-notifications {
+  background: rgba(0,0,0,0);
+}
