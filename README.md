@@ -37,7 +37,7 @@ In this repository I want to share with you my dotfiles that form the basis of m
 
 ### Linux distribution
 
-As for now, this installer is only made for Arch and its-based distributions. Support of any other distributions is not planned yet.
+As for now, this repository is only made for Arch and its-based distributions. Support of any other distributions is not planned yet.
 
 ### Device type
 
