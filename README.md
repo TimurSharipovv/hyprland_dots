@@ -10,12 +10,12 @@ In this repository I want to share with you my dotfiles that form the basis of m
 
 ## Screenshot gallery
 
-![linux_brainrot](assets/2026-04-28_01-37-38.png)
-![nvim](/home/anywhay/Pictures/Screenshots/rice/22026-04-28_01-39-24.png)
-![terminal](/home/anywhay/Pictures/Screenshots/rice/2026-04-28_01-40-09.png)
-![thunar](/home/anywhay/Pictures/Screenshots/rice/2026-04-28_01-40-57.png)
-![rofi](/home/anywhay/Pictures/Screenshots/rice/2026-04-28_01-44-30.png)
-![poweroffmenu](/home/anywhay/Pictures/Screenshots/rice/2026-04-28_01-45-11.png)
+![linux_brainrot](assets/screenshot1.png)
+![nvim](assets/screenshot2.png))
+![terminal](assets/screenshot3.png))
+![thunar](assets/screenshot4.png))
+![rofi](assets/screenshot5.png))
+![poweroffmenu](assets/screenshot6.png))
 
 ## Main components
 
