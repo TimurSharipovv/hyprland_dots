@@ -10,7 +10,7 @@ In this repository I want to share with you my dotfiles that form the basis of m
 
 ## Screenshot gallery
 
-![linux_brainrot](/home/anywhay/Pictures/Screenshots/rice/2026-04-28_01-37-38.png)
+![linux_brainrot](assets/2026-04-28_01-37-38.png)
 ![nvim](/home/anywhay/Pictures/Screenshots/rice/22026-04-28_01-39-24.png)
 ![terminal](/home/anywhay/Pictures/Screenshots/rice/2026-04-28_01-40-09.png)
 ![thunar](/home/anywhay/Pictures/Screenshots/rice/2026-04-28_01-40-57.png)
