@@ -52,7 +52,7 @@ As for now, this repository is only made for Arch and its-based distributions. S
 
 ## How to install
 
-> Installation can take from 10 to 30 minutes with archinstall or 5 to 15 without. Correction: This repository is not a full-fledged project. It only stores dotfiles. To use them successfully, you need uset uttility "GNU Stow"
+> Installation can take from 10 to 30 minutes with archinstall or 5 to 15 without. Correction: This repository is not a full-fledged project. It only stores dotfiles. To use them successfully, you need uset uttility "GNU Stow". It will allow us to create links within our home directory to all the dotfiles located in the specified .dotfiles.
 
 ### 1. Install Git, Stow
 

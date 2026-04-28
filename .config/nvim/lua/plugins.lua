@@ -111,24 +111,5 @@ return require("lazy").setup({
       require('nvim-tree').setup()
       vim.keymap.set('n', '<leader>t', ':NvimTreeToggle<CR>', { silent = true })
     end
-  },
-  -- Улучшенная подсветка синтаксиса (Treesitter)
-  {
-    'nvim-treesitter/nvim-treesitter',
-    build = ':TSUpdate',
-    config = function()
-      require('nvim-treesitter.configs').setup({
-        -- Список языков, которые нужно установить сразу
-        ensure_installed = { "lua", "python", "rust", "bash", "javascript", "markdown", "markdown_inline" },
-        
-        highlight = {
-          enable = true, -- Включить саму подсветку
-          additional_vim_regex_highlighting = false,
-        },
-        indent = {
-          enable = true, -- Улучшенные автоматические отступы
-        },
-      })
-    end,
-  },
+  }, 
 })
